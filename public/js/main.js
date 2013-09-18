@@ -26,7 +26,7 @@ function crossFade($elements){
         var currentZIndex = current.css("z-index");
         current.css("z-index", nextZIndex-1);
         next.fadeIn(500, function(){
-            console.log("fade in from " + nextIndex + " complete. hiding " + currentIndex);
+//            console.log("fade in from " + nextIndex + " complete. hiding " + currentIndex);
             current.hide();
             current.css("z-index", currentZIndex);
             currentIndex = nextIndex;
@@ -48,5 +48,12 @@ function initCrossFaders(){
 
 $(function(){
     console.log("Ready!");
+
+    //take care of ellipsis
+    $(".project_card_description").ellipsis();
+    $(window).resize(function(){
+        $(".project_card_description").ellipsis();
+    });
+
     initCrossFaders();
 });

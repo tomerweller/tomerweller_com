@@ -10,6 +10,10 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+H1, H2{
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+
 #bg_face {
     background: url("../img/shoulders.jpg") center;
     background-size: cover;
@@ -47,12 +51,16 @@ body{
 }
 
 .shiny_text {
-    font-weight: bold;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
     padding: 5px 10px;
-    font-size: 2em;
+    font-size: 1.75em;
     background: #fefe00;
     display: inline-block;
     color: #000000;
+}
+.H2 {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
+    font-size: 10em !important;
 }
 
 #category_play_container {
@@ -201,3 +209,32 @@ body{
     position: relative;
 }
 
+.project_card_image {
+    height: 200px;
+}
+
+.project_card_text_container {
+    background: #fefe00;
+    padding: 5px;
+
+    margin-bottom: 20px;
+}
+
+.project_card_title {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.project_card_description {
+    font-size: 14px;
+    margin: 0;
+    white-space:normal;
+    text-overflow: ellipsis;
+    height: 48px;
+    overflow: hidden;
+}
+
+#life_categories{
+}
