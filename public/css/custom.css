@@ -1,5 +1,5 @@
 body{
-    background: #F6F6F6;
+    background: #F2F2F2;
 }
 
 .courrier_new{
@@ -10,8 +10,16 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-H1, H2{
+H2{
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 24px;
+}
+
+.category_title{
+    /*margin-top: 60px;*/
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: 24px;
+    text-spacing: none;
 }
 
 #bg_face {
@@ -25,35 +33,51 @@ H1, H2{
     z-index: -1;
 }
 
-#title_box {
-    background: url("../img/shoulders.jpg") center;
+.bg_shoulders {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/tomer-minified.jpg") center;
     background-size: cover;
+    z-index: -1;
+    -webkit-filter: brightness(0.8);
+}
+
+#title_box {
+    position: relative;
     text-align: center;
     top: 0;
     left: 0;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
     color: #ffffff;
 }
 
-#title_text{
+#main_title_text {
     font-size: 4em;
+    margin-bottom: 0;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
 }
 
 .category_card {
     text-align: center;
     z-index: 1;
     color: #ffffff;
-    padding: 50px 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 70px;
+    /*margin-top: 30px;*/
+    /*margin-bottom: 30px;*/
 }
 
 .shiny_text {
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
     padding: 5px 10px;
-    font-size: 1.75em;
+    font-size: 16px;
     background: #fefe00;
     display: inline-block;
     color: #000000;
@@ -90,7 +114,7 @@ H1, H2{
 }
 
 #life_categories {
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .project_card {
@@ -104,7 +128,7 @@ H1, H2{
 }
 
 .seer_bg {
-    background: url("../img/seer_1.webp") center;
+    background: url("../img/seer_2.png") center;
     background-size: cover;
 }
 
@@ -181,7 +205,7 @@ H1, H2{
 .cell_bg {
     background-color: #779988;
     background-size: cover;
-    -webkit-filter: brightness(0.5);
+    -webkit-filter: brightness(0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -210,21 +234,22 @@ H1, H2{
 }
 
 .project_card_image {
-    height: 200px;
+    height: 170px;
 }
 
 .project_card_text_container {
-    background: #fefe00;
-    padding: 5px;
-
+    background: #ffffff;
+    padding: 10px;
+    text-decoration: none;
     margin-bottom: 20px;
 }
 
 .project_card_title {
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
     letter-spacing: 0;
+
 }
 
 .project_card_description {
@@ -236,5 +261,55 @@ H1, H2{
     overflow: hidden;
 }
 
-#life_categories{
+.article_img{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.general_text{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.article_container {
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+.subtitle {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.spacer {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: lightgray;
+    background-color: lightgray;
+}
+
+.category_container {
+    margin-bottom: 60px !important;
 }
