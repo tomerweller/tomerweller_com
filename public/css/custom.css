@@ -16,10 +16,8 @@ H2{
 }
 
 .category_title{
-    /*margin-top: 60px;*/
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
     font-size: 24px;
-    text-spacing: none;
 }
 
 #bg_face {
@@ -56,14 +54,15 @@ H2{
     color: #ffffff;
 }
 
-#main_title_text {
+.main_title_text {
     font-size: 4em;
     margin-bottom: 0;
     line-height: 50px;
     padding-top: 15px;
     padding-bottom: 10px;
-
 }
+
+
 
 .category_card {
     text-align: center;
@@ -263,15 +262,15 @@ H2{
 
 .article_img{
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .general_text{
     font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 li {
@@ -285,9 +284,11 @@ a{
     color: inherit;
     text-decoration: none;
 }
+
 a:hover{
     text-decoration: none;
 }
+
 a:visited{
     text-decoration: none;
 }
@@ -295,7 +296,10 @@ a:visited{
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
+}
 
+.category_subtitle {
+    font-size: 20px;
 }
 
 .spacer {
@@ -305,11 +309,32 @@ a:visited{
 hr {
     border: none;
     height: 1px;
-    /* Set the hr color */
     color: lightgray;
     background-color: lightgray;
+}
+
+.shiny_category_text {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #fefe00;
+    display: inline-block;
+    color: #000000;
+}
+
+.category_title_text {
+    font-size: 4em;
+    margin-bottom: 0;
+    line-height: 50px;
+    /*padding-top: 15px;*/
+    padding-bottom: 10px;
 }
 
 .category_container {
     margin-bottom: 60px !important;
 }
+
+.category_title_container {
+    margin-top: 60px;
+}
+

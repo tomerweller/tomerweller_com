@@ -15,9 +15,9 @@ function setStartInterval(fn, delay){
 function crossFade($elements){
     var currentIndex = 0;
     $elements.each(function(selector){
-        $(selector).hide();
+        $(selector).css("opacity", "0");
     });
-    $($elements[0]).show();
+    $($elements[0]).css("opacity", "1");
     setStartInterval(function(){
         var current = $($elements[currentIndex]);
         var nextIndex = (currentIndex+1)%$elements.length;
@@ -27,7 +27,8 @@ function crossFade($elements){
         current.css("z-index", nextZIndex-1);
         next.fadeIn(500, function(){
 //            console.log("fade in from " + nextIndex + " complete. hiding " + currentIndex);
-            current.hide();
+//            current.hide();
+            current.css("opacity", 0);
             current.css("z-index", currentZIndex);
             currentIndex = nextIndex;
         });
@@ -45,6 +46,18 @@ function initCrossFaders(){
         crossFadeWithDelay(currentFader.children(), 200*i);
     }
 }
+
+$.fn.fadeOut = function(speed, callback){
+    var transitionSpeed = typeof (speed) == "undefined" ? 500 : speed;
+    $(this).transition({opacity: 0 }, transitionSpeed, callback);
+
+};
+
+$.fn.fadeIn = function(speed, callback){
+    var transitionSpeed = typeof (speed) == "undefined" ? 500 : speed;
+    $(this).transition({opacity: 1 }, transitionSpeed, callback);
+
+};
 
 $(function(){
     console.log("Ready!");
