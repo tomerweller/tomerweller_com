@@ -44,14 +44,16 @@ H2{
 }
 
 #title_box {
-    position: relative;
+    position: fixed;
     text-align: center;
     top: 0;
     left: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    height: 345px;
+    /*padding-top: 100px;*/
+    /*padding-bottom: 100px;*/
     width: 100%;
     color: #ffffff;
+    z-index: -2;
 }
 
 .main_title_text {
@@ -192,7 +194,7 @@ H2{
 }
 
 .su_bg {
-    background: url("../img/social_urinal_portrait.jpg") center;
+    background: url("../img/social_urinal_portrait_min.jpg") center;
     background-size: cover;
 }
 
@@ -233,7 +235,7 @@ H2{
 }
 
 .project_card_image {
-    height: 170px;
+    height: 200px;
 }
 
 .project_card_text_container {
@@ -248,7 +250,6 @@ H2{
     font-size: 14px;
     margin: 0;
     letter-spacing: 0;
-
 }
 
 .project_card_description {
@@ -338,3 +339,33 @@ hr {
     margin-top: 60px;
 }
 
+#main_content {
+    position: relative;
+    margin-top: 345px;
+    z-index: 2;
+    background: #F2F2F2;
+}
+
+#title_box_text {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-webkit-transform: translate(0, -50%);
+    -ms-webkit-transform: translate(0, -50%);
+    -o-webkit-transform: translate(0, -50%);
+    webkit-transform: translate(0, -50%);
+}
+
+.video_wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video_wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -25,6 +25,17 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+var projectViews = ["seer", "cyclo", "social_urinal"];
+projectViews.forEach(function(projectView){
+    app.get('/'+projectView, function(req, res){
+        res.render(projectView);
+    });
+});
+
+app.get('/test', function(req, res){
+    res.render("views_test", {title : "title"});
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
