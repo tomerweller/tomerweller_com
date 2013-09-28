@@ -25,7 +25,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-var projectViews = ["seer", "cyclo", "social_urinal"];
+var projectViews = ["seer", "cyclo", "social_urinal", "paradroid"];
 projectViews.forEach(function(projectView){
     app.get('/'+projectView, function(req, res){
         res.render(projectView);

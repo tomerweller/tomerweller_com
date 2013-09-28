@@ -38,7 +38,7 @@
 <div class="container category_container">
     <div id="life_categories" class="row">
         <div class="col-sm-6 col-md-3 spacer">
-            <a href="#play_container" class="scroll">
+            <a onclick="$('#play_container').animatescroll();">
                 <div id="play_card" class="category_card">
                     <div class="xfader">
                         <div class="cell_bg paradroid_bg1"></div>
@@ -50,7 +50,7 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-3 spacer">
-            <a href="#work_container" class="scroll">
+            <a onclick="$('#work_container').animatescroll();">
                 <div class="category_card">
                     <div class="xfader">
                         <div class="cell_bg anydo_bg"></div>
@@ -62,7 +62,7 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-3 spacer">
-            <a href="#learn_container" class="scroll">
+            <a onclick="$('#learn_container').animatescroll();">
                 <div class="category_card">
                     <div class="xfader">
                         <div class="cell_bg huji1_bg"></div>
@@ -74,13 +74,13 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-3 spacer">
-            <a href="#teach_container" class="scroll">
+            <a onclick="$('#teach_container').animatescroll();">
                 <div class="category_card">
                     <div class="xfader">
                         <div class="cell_bg shenkar_bg"></div>
                         <div class="cell_bg campus_bg"></div>
                     </div>
-                    <H2>TEACH</H2>
+                    <H2>TEACH</H2>Dn4uqIomeUiY
                 </div>
             </a>
         </div>
@@ -124,12 +124,11 @@
             </a>
         </div>
         <div class="col-sm-8 spacer">
-            <a href="seer.html">
+            <a href="/paradroid">
                 <div>
                     <div class="project_card_image paradroid_bg1"></div>
                     <div class="project_card_text_container">
                         <p class="project_card_title">PARADROID</p>
-
                         <p class="project_card_description">a self navigating, skydiving robot controlled by an onboard
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -147,7 +146,6 @@
                     <div class="project_card_image su_bg"></div>
                     <div class="project_card_text_container">
                         <p class="project_card_title">SOCIAL URINAL</p>
-
                         <p class="project_card_description">Extend the social graph to the last frontier Lorem ipsum
                             dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -256,7 +254,6 @@
             <div class="project_card">
                 <div class="oulu_bg3 cell_bg"></div>
                 <H2>Oulu University </H2>
-
                 <H3>UbiComp Summer School</H3>
             </div>
         </div>
@@ -271,7 +268,6 @@
             <div class="project_card">
                 <div class="campus_bg cell_bg"></div>
                 <H2>Google Campus TLV</H2>
-
                 <H3>Strartups Mentor</H3>
             </div>
         </div>
@@ -293,7 +289,8 @@
 <script src="js/jquery.transit.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.autoellipsis-1.0.10.min.js"></script>
-<script src="js/smooth-scroll.js"></script>
+<!--<script src="js/smooth-scroll.js"></script>-->
+<script src="js/animatescroll.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
