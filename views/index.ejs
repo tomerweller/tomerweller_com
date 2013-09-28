@@ -38,7 +38,7 @@
 <div class="container category_container">
     <div id="life_categories" class="row">
         <div class="col-sm-6 col-md-3 spacer">
-            <a onclick="$('#play_container').animatescroll();">
+            <a href="#" onclick="$('#play').animatescroll();">
                 <div id="play_card" class="category_card">
                     <div class="xfader">
                         <div class="cell_bg paradroid_bg1"></div>
@@ -50,7 +50,7 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-3 spacer">
-            <a onclick="$('#work_container').animatescroll();">
+            <a href="#" onclick="$('#work').animatescroll();">
                 <div class="category_card">
                     <div class="xfader">
                         <div class="cell_bg anydo_bg"></div>
@@ -62,7 +62,7 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-3 spacer">
-            <a onclick="$('#learn_container').animatescroll();">
+            <a href="#" onclick="$('#learn_teach').animatescroll();">
                 <div class="category_card">
                     <div class="xfader">
                         <div class="cell_bg huji1_bg"></div>
@@ -74,7 +74,7 @@
             </a>
         </div>
         <div class="col-sm-6 col-md-3 spacer">
-            <a onclick="$('#teach_container').animatescroll();">
+            <a href="#" onclick="$('#learn_teach').animatescroll();">
                 <div class="category_card">
                     <div class="xfader">
                         <div class="cell_bg shenkar_bg"></div>
@@ -88,7 +88,7 @@
     </div>
 </div>
 
-<div id="play_container" class="category_container container">
+<div id="play" class="category_container container">
     <p class="category_title">PLAY</p>
     <HR/>
     <div class="row">
@@ -157,7 +157,7 @@
     </div>
 </div>
 
-<div id="work_container" class="container category_container">
+<div id="work" class="container category_container">
     <p class="category_title">WORK</p>
     <HR/>
     <div class="row">
@@ -223,12 +223,12 @@
                     <div class="project_card_text_container">
                         <p class="project_card_title">Performance Engineer - HP Software</p>
                         <p class="project_card_description ellipsis">
-                            Extend the social graph to the last frontier Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            HP Universal Configuration Management Database (UCMDB) software stores, controls, and manages software and
+                            infrastructure components along with associated relationships and dependencies. It provides unparalleled
+                            infrastructure visibility that shows how components are related for consistent and reliable delivery of IT and
+                            business services. This visibility improves and simplifies change control to avoid service disruptions and
+                            better track, manage and control IT infrastructures. HP UCMDB software reduces mean time to repair to keep
+                            operations running more efficiently.
                         </p>
                     </div>
                 </div>
@@ -237,52 +237,57 @@
     </div>
 </div>
 
-<div id="learn_container" class="category_container container">
-    <p class="category_title">LEARN</p>
+<div id="learn_teach" class="category_container container">
+    <p class="category_title">LEARN/TEACH</p>
     <HR/>
     <div class="row">
         <div class="col-sm-8">
-            <div class="project_card">
-                <div class="hp_bg cell_bg"></div>
-                <H2>Hebrew Uniersity</H2>
-
-                <H3>Bachelor of Science - Computer Software Engineering</H3>
-            </div>
+            <!--<a href="/hp">-->
+                <div>
+                    <div class="project_card_image shenkar_bg"></div>
+                    <div class="project_card_text_container">
+                        <p class="project_card_title">Development for mobile devices - Teacher</p>
+                        <p class="project_card_description ellipsis">
+                            Plan and execute mobile development workshops surrounding the Android platform.
+                        </p>
+                    </div>
+                </div>
+            <!--</a>-->
         </div>
         <div class="col-sm-4">
-            <div class="project_card">
-                <div class="oulu_bg3 cell_bg"></div>
-                <H2>Oulu University </H2>
-
-                <H3>UbiComp Summer School</H3>
-            </div>
+            <a href="http://www.ubioulu.fi/en/UBI-summer-school-2013">
+                <div>
+                    <div class="project_card_image oulu_bg"></div>
+                    <div class="project_card_text_container">
+                        <p class="project_card_title">UbiComp Summer School, Oulu</p>
+                        <p class="project_card_description ellipsis">
+                            Participate in an augmented reality workshop led by Prof. Mark Billinghurst.
+                        </p>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
-</div>
-
-<div id="teach_container" class="category_container container">
-    <p class="category_title">TEACH</p>
-    <HR/>
     <div class="row">
-        <div class="col-sm-4">
-            <div class="project_card">
-                <div class="campus_bg cell_bg"></div>
-                <H2>Google Campus TLV</H2>
-
-                <H3>Strartups Mentor</H3>
-            </div>
-        </div>
-        <div class="col-sm-8">
-            <div class="project_card">
-                <div class="shenkar_bg cell_bg"></div>
-                <H2>Shenkar</H2>
-
-                <H3>Mobile Technologies Teacher</H3>
-            </div>
+        <div class="col-sm-12">
+            <!--<a href="/hp">-->
+                <div>
+                    <div class="project_card_image huji1_bg"></div>
+                    <div class="project_card_text_container">
+                        <p class="project_card_title">Hebrew University in Jerusalem</p>
+                        <p class="project_card_description ellipsis">
+                            Bachelor of Science in Computer Science Engineering. Majored in Networking and Information
+                            Systems. GPA 87. Received excellence award for final engineering project.
+                        </p>
+                    </div>
+                </div>
+            <!--</a>-->
         </div>
     </div>
 </div>
+<% include footer.ejs%>
 </div>
+
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -294,9 +299,6 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
-<!--#include virtual="seer.html"-->
-
-<!--TODO: implement-->
 <script>
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
@@ -310,7 +312,7 @@
         e.src = '//www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e, r)
     }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
+    ga('create', 'UA-44438132-1');
     ga('send', 'pageview');
 </script>
 </body>

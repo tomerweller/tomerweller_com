@@ -20,17 +20,6 @@ H2{
     font-size: 24px;
 }
 
-#bg_face {
-    background: url("../img/shoulders.jpg") center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 550px;
-    z-index: -1;
-}
-
 .bg_shoulders {
     position: absolute;
     top: 0;
@@ -217,6 +206,11 @@ H2{
     background-size: cover;
 }
 
+.hp_bg3{
+    background: url("../img/hp3.jpg") center;
+    background-size: cover;
+}
+
 .cyclo_bg {
     background: url("../img/cyclo_1.png") center;
     background-size: cover;
@@ -235,7 +229,7 @@ H2{
 .cell_bg {
     background-color: #779988;
     background-size: cover;
-    -webkit-filter: brightness(0.7);
+    -webkit-filter: brightness(0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -322,6 +316,9 @@ a:hover{
 a:visited{
     text-decoration: none;
 }
+
+
+
 .subtitle {
     font-size: 20px;
     padding-left: 50px;
@@ -342,6 +339,12 @@ hr {
     color: lightgray;
     background-color: lightgray;
 }
+
+.article a{
+    color: teal;
+    text-decoration: underline;
+}
+
 
 .shiny_category_text {
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -397,4 +400,19 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+ul {
+    list-style-type: katakana;
+}
+
+ol {
+    list-style-type: katakana;
+}
+
+footer{
+    color: darkgray;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
