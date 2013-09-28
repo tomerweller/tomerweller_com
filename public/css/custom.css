@@ -143,13 +143,37 @@ H2{
     background-size: cover;
 }
 
+.paradroid_bg3 {
+    background: url("../img/paradroid3.jpg") center;
+    background-size: cover;
+}
+
+.paradroid_bg4 {
+    background: url("../img/paradroid4.jpg") center;
+    background-size: cover;
+}
+
 .anydo_bg {
     background: url("../img/cal-iphone.jpg") center;
     background-size: cover;
 }
 
+.anydo_bg2 {
+    background: url("../img/anydo-android.jpg") center;
+    background-size: cover;
+}
 .attentiv_bg {
     background: url("../img/attentiv1.jpg") center;
+    background-size: cover;
+}
+
+.attentiv_bg2 {
+    background: url("../img/attentiv2.jpg") center;
+    background-size: cover;
+}
+
+.attentiv_bg3 {
+    background: url("../img/attentiv3.jpg") center;
     background-size: cover;
 }
 
@@ -185,6 +209,11 @@ H2{
 
 .hp_bg {
     background: url("../img/hp.jpg") center;
+    background-size: cover;
+}
+
+.hp_bg2{
+    background: url("../img/hp2.png") center;
     background-size: cover;
 }
 
@@ -235,7 +264,7 @@ H2{
 }
 
 .project_card_image {
-    height: 200px;
+    height: 250px;
 }
 
 .project_card_text_container {
