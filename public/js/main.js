@@ -49,13 +49,13 @@ function initCrossFaders(){
 
 $.fn.fadeOut = function(speed, callback){
     var transitionSpeed = typeof (speed) == "undefined" ? 500 : speed;
-    $(this).transition({opacity: 0 }, transitionSpeed, callback);
+    $(this).animate({opacity: 0 }, transitionSpeed, callback);
 
 };
 
 $.fn.fadeIn = function(speed, callback){
     var transitionSpeed = typeof (speed) == "undefined" ? 500 : speed;
-    $(this).transition({opacity: 1 }, transitionSpeed, callback);
+    $(this).animate({opacity: 1 }, transitionSpeed, callback);
 
 };
 

@@ -1,34 +1,64 @@
 <% include article_top.ejs %>
 
 <div class="category_title_container">
-    <p class="shiny_category_text">WORK</p>
+    <p class="shiny_category_text"><a href="/#work">WORK</a></p>
     <p class="category_title_text">Intel ICRI-CI</p>
-    <p class="category_subtitle">Researcher</p>
+    <p class="category_subtitle">Research Assistant</p>
 </div>
-
 
 <div class="general_text">
     <h3>About</h3>
     <p>
         <b>The Intel Collaboration Research Institute for Computational Intelligence</b> is focused on machine learning,
-        brain inspired computing and heterogeneous computer architecture. The institute is based in Israel at the Technion
+        brain inspired computing and heterogeneous computer architecture. The institute is based in Israel at the
+        Technion
         in Haifa and the Hebrew University in Jerusalem (HUJI) and include researchers also from Bar-Ilan University,
         the Weitzman Institute and the Shenkar college. The center is mainly affiliated with the Intel Lab System on
         Chip Platform Architecture Lab The center was inaugurated on May 22, 2012.
     </p>
 </div>
 
+<!--picture-->
+
 <div class="general_text">
-    <h3>My Role</h3>
+    <h3>Intelligent Agents - Mobile Sensing for User Activity and Context</h3>
+
     <p>
-        In 2013 I joined a combined group of researchers from The <em>Hebrew University</em> in Jerusalem, The
-        <em>Technion</em> in Haifa and <em>Shenkar College of Arts and Engineering</em> in Ramat Gan. <br/>
+        A team led by Prof. Shie Mannor (Technion) plans to harness machine learning methodology to understand the
+        context of a human user, discover the user's purpose, and eventually proactively make recommendations and
+        take actions for the user.
     </p>
 </div>
 
-<h3>Links</h3>
-<ul>
-    <li><a href="http://icri-ci.technion.ac.il/">Intel ICRI-CI</a></li>
-</ul>
+<div class="general_text">
+    <h3>My Role</h3>
+
+    <p>
+        In the beginning of 2013 I joined the Intelligent Agents group via Shenkar College of Arts and Engineering.
+        Under the supervision of Dr. Amnon Dekel and with two of our <a href="/shenkar">Mobile technologies</a>
+        students,
+        we set to to build <b>Pythia.</b><br/>
+        <b>Pythia</b> is full stack intelligent agent consisting of 3 layers:
+    </p>
+    <ol>
+        <li>Local Agent - an android app that collects data from various sensors: GPS, accelerometer, calendar
+            events, wi-fi signals, etc, saves them locally and asynchronously sends them to the backend
+        </li>
+        <li>Backend - a cloud hosted server that accepts data from all installed local agents and stores them in a
+            central data-store
+        </li>
+        <li>Intelligent layer - does post processing on data collected form local agents to infer user's context</li>
+    </ol>
+</div>
+
+<div class="general_text">
+    <h3>Links</h3>
+    <ul>
+        <li><a href="http://icri-ci.technion.ac.il/">Intel ICRI-CI</a></li>
+        <li><a href="http://icri-ci.technion.ac.il/projects/mobile-sensing-for-user-activity-and-context/">Mobile
+                Sensing for User Activity and Context</a></li>
+        <li><a href="">Poster</a></li>
+    </ul>
+</div>
 
 <% include article_bottom.ejs %>
