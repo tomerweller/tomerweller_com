@@ -59,6 +59,15 @@ $.fn.fadeIn = function(speed, callback){
 
 };
 
+function initParallax() {
+    var $window = $(window);
+    var $bgShoulders = $('.bg_shoulders');
+    $window.scroll(function () {
+        var newPercent = 50+100*($window.scrollTop()*0.3/$bgShoulders.height());
+        $bgShoulders.css({ "background-position-y": newPercent + "%" });
+    });
+}
+
 $(function(){
     console.log("Ready!");
 
@@ -69,4 +78,5 @@ $(function(){
     });
 
     initCrossFaders();
+    initParallax();
 });
