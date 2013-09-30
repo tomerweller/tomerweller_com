@@ -30,7 +30,8 @@ app.get('/', function(req, res){
     res.render("index");
 })
 
-var projectViews = ["seer", "cyclo", "social_urinal", "paradroid", "anydo", "intel", "logicalls", "hp"];
+var projectViews = ["seer", "cyclo", "social_urinal", "paradroid", "anydo", "intel", "logicalls", "hp", "huji",
+    "shenkar", "oulu"];
 projectViews.forEach(function(projectView){
     app.get('/'+projectView, function(req, res){
         res.render(projectView);

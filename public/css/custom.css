@@ -30,6 +30,8 @@ H2{
     background-size: cover;
     z-index: -1;
     -webkit-filter: brightness(0.8);
+    filter: blur(5px)
+
 }
 
 #title_box {
@@ -191,6 +193,12 @@ H2{
     background-size: cover;
 }
 
+.oulu_bg7 {
+    background: url("../img/oulu7.jpg") center;
+    background-size: cover;
+}
+
+
 .glass_bg {
     background: url("../img/gglass.jpg") center;
     background-size: cover;
@@ -211,6 +219,26 @@ H2{
     background-size: cover;
 }
 
+.hp_bg3{
+    background: url("../img/hp3.jpg") center;
+    background-size: cover;
+}
+
+.hp_bg4{
+    background: url("../img/hp4.png") center;
+    background-size: cover;
+}
+
+.hp_bg5{
+    background: url("../img/hp5.jpg") center;
+    background-size: cover;
+}
+
+.hp_bg6{
+    background: url("../img/hp6.png") center;
+    background-size: cover;
+}
+
 .cyclo_bg {
     background: url("../img/cyclo_1.png") center;
     background-size: cover;
@@ -218,6 +246,21 @@ H2{
 
 .su_bg {
     background: url("../img/social_urinal_portrait_min.jpg") center;
+    background-size: cover;
+}
+
+.su_bg2 {
+    background: url("../img/su2.jpg") center;
+    background-size: cover;
+}
+
+.su_bg3 {
+    background: url("../img/su3.jpg") center;
+    background-size: cover;
+}
+
+.su_bg4 {
+    background: url("../img/su4.jpg") center;
     background-size: cover;
 }
 
@@ -284,11 +327,21 @@ H2{
     overflow: hidden;
 }
 
-.article_img{
+.article_img_container {
+    position: relative;
     width: 100%;
     height: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
+    /*background-color: #779988;*/
+}
+
+.article_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .general_text{
@@ -402,6 +455,7 @@ hr {
 }
 
 .video_wrapper {
+    background-color: #779988;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
@@ -429,3 +483,4 @@ footer{
     font-size: 16px;
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
+
