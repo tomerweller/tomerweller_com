@@ -59,13 +59,18 @@ $.fn.fadeIn = function(speed, callback){
 
 };
 
+var PARALLAX_FACTOR = 0.3;
+
 function initParallax() {
     var $window = $(window);
     var $bgShoulders = $('.bg_shoulders');
-    $window.scroll(function () {
-        var newPercent = 50+100*($window.scrollTop()*0.3/$bgShoulders.height());
+    var bgHeight = $bgShoulders.height();
+    var adjustBgHeight = function(){
+        var newPercent = 50+100*($window.scrollTop()*PARALLAX_FACTOR/bgHeight);
         $bgShoulders.css({ "background-position-y": newPercent + "%" });
-    });
+    };
+    $window.scroll(adjustBgHeight);
+    adjustBgHeight();
 }
 
 $(function(){
