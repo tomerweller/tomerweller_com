@@ -1,5 +1,5 @@
 body{
-    background: #F2F2F2;
+    /*background: #F2F2F2;*/
 }
 
 .courrier_new{
@@ -39,7 +39,7 @@ H2{
     text-align: center;
     top: 0;
     left: 0;
-    height: 345px;
+    height: 360px;
     /*padding-top: 100px;*/
     /*padding-bottom: 100px;*/
     width: 100%;
@@ -153,6 +153,38 @@ H2{
     background: url("../img/anydo-android.jpg") center;
     background-size: cover;
 }
+
+.intel_bg1 {
+    background: url("../img/intel1.jpg") center;
+    background-size: cover;
+}
+
+.intel_bg2 {
+    background: url("../img/intel2.jpg") center;
+    background-size: cover;
+}
+.shenkar_bg1 {
+    background: url("../img/shenkar1.jpg") center;
+    background-size: cover;
+}
+
+.shenkar_bg2 {
+    background: url("../img/shenkar2.jpg") center;
+    background-size: cover;
+}
+
+.shenkar_bg3 {
+    background: url("../img/shenkar3.jpg") center;
+    background-size: cover;
+}
+
+
+.intel_bg3 {
+    background: url("../img/intel3.jpg") center;
+    background-size: cover;
+}
+
+
 .attentiv_bg {
     background: url("../img/attentiv1.jpg") center;
     background-size: cover;
@@ -193,8 +225,24 @@ H2{
     background-size: cover;
 }
 
+.oulu_bg4 {
+    background: url("../img/oulu4.jpg") center;
+    background-size: cover;
+}
+
+
+.oulu_bg6 {
+    background: url("../img/oulu6.jpg") center;
+    background-size: cover;
+}
+
 .oulu_bg7 {
     background: url("../img/oulu7.jpg") center;
+    background-size: cover;
+}
+
+.oulu_bg8 {
+    background: url("../img/oulu8.jpg") center;
     background-size: cover;
 }
 
@@ -439,7 +487,7 @@ hr {
 
 #main_content {
     position: relative;
-    margin-top: 345px;
+    margin-top: 360px;
     z-index: 2;
     background: #F2F2F2;
 }
