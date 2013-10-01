@@ -20,6 +20,16 @@ H2{
     font-size: 24px;
 }
 
+.bg_opaque{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.2;
+}
+
 .bg_shoulders {
     position: absolute;
     top: 0;
@@ -29,7 +39,7 @@ H2{
     background: url("../img/tomer-minified.jpg") center;
     background-size: cover;
     z-index: -1;
-    -webkit-filter: brightness(0.8);
+    /*-webkit-filter: brightness(0.8);*/
     filter: blur(5px)
 }
 
@@ -60,7 +70,9 @@ H2{
     text-align: center;
     z-index: 1;
     color: #ffffff;
-    padding: 70px;
+    padding-top: 65px;
+    padding-bottom: 75px;
+
     /*margin-top: 30px;*/
     /*margin-bottom: 30px;*/
 }
@@ -317,15 +329,27 @@ H2{
 }
 
 .cell_bg {
-    background-color: #779988;
+    /*background-color: #779988;*/
     background-size: cover;
-    -webkit-filter: brightness(0.5);
+    /*-webkit-filter: brightness(0.5);*/
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: 10px 15px;
+    z-index: -1;
+}
+
+.bg_opaque_strong {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 10px 15px;
+    opacity: 0.5;
     z-index: -1;
 }
 
