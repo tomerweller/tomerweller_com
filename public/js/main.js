@@ -65,9 +65,16 @@ function initParallax() {
     var $window = $(window);
     var $bgShoulders = $('.bg_shoulders');
     var bgHeight = $bgShoulders.height();
+    var $titleText = $("#title_box_text");
+    var titleTextHeight = $titleText.height();
     var adjustBgHeight = function(){
-        var newPercent = 50+100*($window.scrollTop()*PARALLAX_FACTOR/bgHeight);
+        var scrollTop = $window.scrollTop();
+        if (scrollTop>bgHeight) return;
+        //parallax
+        var newPercent = 50+100*(scrollTop*PARALLAX_FACTOR/bgHeight);
         $bgShoulders.css({ "background-position-y": newPercent + "%" });
+        var percentShown = (titleTextHeight-scrollTop)/titleTextHeight;
+        $titleText.css("opacity", percentShown);
     };
     $window.scroll(adjustBgHeight);
     adjustBgHeight();
