@@ -73,8 +73,8 @@ function initParallax() {
         //parallax
         var newPercent = 50+100*(scrollTop*PARALLAX_FACTOR/bgHeight);
         $bgShoulders.css({ "background-position-y": newPercent + "%" });
-        var percentShown = (titleTextHeight-scrollTop)/titleTextHeight;
-        $titleText.css("opacity", percentShown);
+//        var percentShown = (titleTextHeight-scrollTop)/titleTextHeight;
+//        $titleText.css("opacity", percentShown);
     };
     $window.scroll(adjustBgHeight);
     adjustBgHeight();
