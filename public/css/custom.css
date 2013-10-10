@@ -501,7 +501,8 @@ hr {
 }
 
 .category_container {
-    margin-bottom: 60px !important;
+    margin-bottom: 30px !important;
+    padding-top: 30px !important;
 }
 
 .category_title_container {
