@@ -19,6 +19,7 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 // development only
 if ('development' == app.get('env')) {
@@ -56,3 +57,5 @@ app.get('/test', function(req, res){
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+
