@@ -53,8 +53,8 @@ projectViews.forEach(function(projectView){
     });
 });
 
-app.get('/test', function(req, res){
-    res.render("views_test", {title : "title"});
+app.get('/ping', function(req, res){
+    res.send({"status" : "ok"});
 });
 
 http.createServer(app).listen(app.get('port'), function(){
