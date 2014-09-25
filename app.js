@@ -2,9 +2,6 @@
 /**
  * Module dependencies.
  */
-if ('development' == app.get('env')) {
-    app.use(express.errorHandler());
-}
 
 require('newrelic');
 
