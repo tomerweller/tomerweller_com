@@ -567,3 +567,13 @@ footer{
     font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
 }
 
+#warning {
+    position: absolute;
+    width:100%;
+    padding: 10px 10px 0px 10px;
+    font-size: 13px;
+    color: black;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    background: red;
+    text-align: center;
+}
