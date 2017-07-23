@@ -40,7 +40,7 @@ H2{
     background-size: cover;
     z-index: -1;
     /*-webkit-filter: brightness(0.8);*/
-    filter: blur(5px)
+    /*filter: blur(5px)*/
 }
 
 #title_box {
